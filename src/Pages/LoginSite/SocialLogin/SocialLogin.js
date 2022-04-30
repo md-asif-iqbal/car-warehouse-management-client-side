@@ -4,6 +4,7 @@ import'./SocialLogin.css'
 import google from'../../../Images/login-img/google-logo.png'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loading from '../../Home/Loading/Loading';
 const SocialLogin = () => {
     let errorElements;
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -13,6 +14,11 @@ const SocialLogin = () => {
               <p className='text-danger'>{error?.message}</p>
             </div>
          
+      }
+      if(loading){
+          return <Loading></Loading>
+          
+        //   console.log('loading');
       }
     return (
         <div>
