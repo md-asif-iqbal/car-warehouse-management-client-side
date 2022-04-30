@@ -22,7 +22,9 @@ position: relative;
 .type{
     border: 1px solid rgba(186, 178, 178, 0.381);
     background-color: rgba(157, 164, 164, 0.073);
+    color: white;
 }
+
 .btn-submit{
     padding-left: 20%;
     padding-right: 20%;

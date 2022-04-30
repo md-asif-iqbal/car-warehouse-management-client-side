@@ -35,10 +35,11 @@ const HandleSignUp = async (event) =>{
             <div className='img'>
                 <img src={img} alt=""/>
             </div>
-            
-            <Form className='forms-type mt-2 p-4' onSubmit={HandleSignUp}>
+            <div className='forms-type mt-2 p-4'>
                 <h2 className='mb-2'>Create your account</h2>
                 <SocialLogin></SocialLogin>
+            <Form  onSubmit={HandleSignUp}>
+            
                 <Form.Group className="mb-3" controlId="formGroupName">
                     <Form.Label>Your Name</Form.Label>
                     <Form.Control  className='type' type="text" name='name' placeholder="Enter your name" required />
@@ -59,6 +60,8 @@ const HandleSignUp = async (event) =>{
                 <button className='btn btn-submit mb-4 mt-2' type="btn" value="SignUp">Sign up</button>
                 <p>Do You have an account?<Link to="/login" className="text-decoration-none text-primary" > Please Log in</Link> </p>
             </Form>
+            </div>
+            
            
 
         </div>
