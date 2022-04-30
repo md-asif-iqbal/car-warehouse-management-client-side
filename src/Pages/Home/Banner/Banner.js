@@ -1,9 +1,18 @@
 import React from 'react';
-
+import"./Banner.css"
+import car from "../../../Images/homePage/main-img 2.jpg"
 const Banner = () => {
     return (
-        <div>
-            <h2>This is Banner</h2>
+        <div className='banner'>
+            <div className='banner-img'>
+                <img src={car} alt=""/>
+            </div>
+            <div className='banner-text'>
+                <h4>2022</h4>
+                <h1>Find Your Next Match</h1>
+                <h6>Find the right price, dealer and advice</h6>
+                <button className='btn btn-type' type="">LEARN MORE</button>
+            </div>
         </div>
     );
 };

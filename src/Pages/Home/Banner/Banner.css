@@ -1,0 +1,38 @@
+
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
+}
+.banner-text{
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-left: 3%;
+    margin-top: 2%;
+    text-align: start;
+}
+.banner-text h1{
+    font-weight: 600;
+    font-size: 50px;
+}
+.banner-text h4{
+    color: rgb(255, 153, 0);
+    font-size: 25px;
+}
+.banner-text h6{
+    font-size: 20px;
+}
+.btn-type{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.btn-type:hover{
+    background-color: rgb(255, 187, 0);
+    color: white;
+}

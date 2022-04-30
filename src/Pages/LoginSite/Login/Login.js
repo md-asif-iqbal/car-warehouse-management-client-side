@@ -5,7 +5,7 @@ import { Col, Form, Row } from 'react-bootstrap';
 import img from'../../../Images/login-img/thumb-1.jpg'
 import'./Login.css'
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { async } from '@firebase/util';
@@ -13,6 +13,10 @@ import Loading from '../../Home/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
+    const navigate = useNavigate();
+    let location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+
     const emailRef = useRef('');
     const passwordRef = useRef('');
     let errorElements;
@@ -33,6 +37,9 @@ const Login = () => {
         await signInWithEmailAndPassword();
         // console.log('found');
 
+    }
+    if(user){
+        navigate(from,{replace: true});
     }
     // handling Error
 
@@ -102,19 +109,19 @@ const Login = () => {
                 <img src={img} alt=""/>
             </div>
             <div className='forms-type mt-5 p-4'>
-                <h2 className='mb-4 mt-4'>Log in to your account</h2>
+                <h2 className='mb-3 mt-2'>Log in to your account</h2>
                 <SocialLogin></SocialLogin>
             <Form onSubmit={handleLogin}>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
+                <Form.Group className="mb-2" controlId="formGroupEmail">
                     <Form.Label>Email address</Form.Label>
                     <FaUser/>
                     <Form.Control  className='type' type="email" ref={emailRef} placeholder="Enter email" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupPassword">
+                <Form.Group className="mb-2" controlId="formGroupPassword">
                     <Form.Label>Password</Form.Label>
                     <Form.Control className='type' type="password" ref={passwordRef} placeholder="Password" required/>
                 </Form.Group>
-                <button className='btn btn-submit mb-4 mt-2' type="btn" value='submit'>Log in</button>
+                <button className='btn btn-submit mb-3 mt-2' type="btn" value='submit'>Log in</button>
                 {errorElements}
                 
             </Form>

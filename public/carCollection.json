@@ -1,8 +1,12 @@
 [
     {
-        "name":"",
-        "img":"",
-        "price":"",
+        "name":"Audi R8 2022",
+        "img":"https://i.ibb.co/tQSLM7T/Audi-R8.jpg",
+        "price":151895,
+        "performance": "Vehicle Type: mid-engine, rear-wheel-drive, 2-passenger, 2-door coupe or convertible",
+        "engine":"DOHC 40-valve V-10, aluminum block and heads, port and direct fuel injection",
+        "transmission":"7-speed dual-clutch automatic",
+        "performance":"60 mph: 3.4–3.5 sec  100 mph: 7.5¬–7.6  sec1/4-Mile: 11.5–11.6sec  Top Speed: 200–204 mph",
         "stock":10
     }
 ]
