@@ -1,1 +1,13 @@
 
+.footer-main{
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.957);
+    color: white;
+    padding: 2%;
+}
+
+.footer-child-2{
+    font-size: 25px;
+    gap: 20px;
+}
