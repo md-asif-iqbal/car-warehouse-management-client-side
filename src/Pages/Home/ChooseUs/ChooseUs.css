@@ -1,0 +1,15 @@
+
+.main-div{
+margin: 2%;
+align-items: center;
+}
+.child-div{
+    margin: 3%;
+}
+.choose-text{
+    text-align: start;
+    margin-left: 4%;
+}
+h1{
+    margin-top: 6%;
+}

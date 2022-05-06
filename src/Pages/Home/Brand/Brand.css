@@ -8,9 +8,10 @@
     
 }
 .brand img{
-    height: 100px;
-    
-     object-fit: scale-down;
+    object-fit: cover ; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 10vh;
+    width: 100%;
 }
 .brand-cards{
     border: 0;

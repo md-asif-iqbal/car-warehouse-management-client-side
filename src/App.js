@@ -4,6 +4,7 @@ import './App.css';
 import Footer from './Pages/Home/Footer/Footer';
 import Home from './Pages/Home/Home/Home';
 import Loading from './Pages/Home/Loading/Loading';
+import ManageItems from './Pages/Home/ManageItems/ManageItems';
 import NavBar from './Pages/Home/NavBar/NavBar';
 import Login from './Pages/LoginSite/Login/Login';
 import SignUp from './Pages/LoginSite/SignUp/SignUp';
@@ -15,8 +16,9 @@ function App() {
         <Routes>
             <Route path='/' element={<Home></Home>}>Home</Route>
             <Route path='/home' element={<Home></Home>}>Home</Route>
-            <Route path='/login' element={<Login></Login>}>Login</Route>
-            <Route path='/signup' element={<SignUp></SignUp>}>Login</Route>
+            <Route path='/login' element={<Login></Login>}></Route>
+            <Route path='/signup' element={<SignUp></SignUp>}></Route>
+            <Route path='/manageItems/:productId' element={<ManageItems></ManageItems>}></Route>
             {/* <Route path='/load' element={<Loading></Loading>}>loading</Route> */}
             
         </Routes>
