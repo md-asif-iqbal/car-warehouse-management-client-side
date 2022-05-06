@@ -1,12 +1,118 @@
 [
     {
+        "name":"Rolls Royce Ghost",
+        "img":"https://i.ibb.co/56gzYYw/rolls-royce-ghost.jpg",
+        "price":343000,
+        "description": "front-engine, all-wheel-drive, 4- or 5-passenger, 4-door sedan",
+        "engine":"twin-turbocharged and intercooled DOHC 48-valve V-12, aluminum block and head",
+        "transmission":"8-speed automatic",
+        "performance":"60 mph: 4.2 sec, 100 mph: 10.3 sec, Top Speed: 155 mph",
+        "stock":12,
+        "seller":"Monaim Rahman"
+    },
+    {
+        "name":"BMW i8",
+        "img":"https://i.ibb.co/ky6T7nR/BMW-i8.jpg",
+        "price":148500,
+        "description": "The BMW i8 returns a certified fuel efficiency of 47.45kmpl and the hybrid sports car has an all-electric range in the range of 25-35km",
+        "engine":"twin-turbocharged and intercooled DOHC 48-valve V-12, aluminum block and head",
+        "transmission":"Aisin F21-360 FT EOP",
+        "performance":"1.5L BMW TwinPower Turbo 3-cylinder engine + eDrive Electric Motor.",
+        "stock":15,
+        "seller":"Asif Iqbal"
+    },
+
+    {
         "name":"Audi R8 2022",
         "img":"https://i.ibb.co/tQSLM7T/Audi-R8.jpg",
         "price":151895,
-        "performance": "Vehicle Type: mid-engine, rear-wheel-drive, 2-passenger, 2-door coupe or convertible",
+        "description": "mid-engine, rear-wheel-drive, 2-passenger, 2-door coupe or convertible",
         "engine":"DOHC 40-valve V-10, aluminum block and heads, port and direct fuel injection",
         "transmission":"7-speed dual-clutch automatic",
-        "performance":"60 mph: 3.4–3.5 sec  100 mph: 7.5¬–7.6  sec1/4-Mile: 11.5–11.6sec  Top Speed: 200–204 mph",
-        "stock":10
+        "performance":"60 mph: 3.4–3.5 sec, 100 mph: 7.5¬–7.6 sec, 1/4-Mile: 11.5–11.6sec,  Top Speed: 200–204 mph",
+        "stock":10,
+        "seller":"Sumaiyya Sultana"
+    },
+    {
+        "name":"Ferrari-488",
+        "img":"https://i.ibb.co/vDQM1kP/ferrari-488.jpg",
+        "price":263553,
+        "description": "The 2015 Ferrari 458 Italia is a rear-drive mid-engine supercar powered by a high-revving 4.5-liter V-8 rated at 562 hp and 398 lb-ft of torque that's paired to a seven-speed dual-clutch automatic transmission. Since this is a purpose-built performance car, gas mileage isn't a strong suit at 13/17 mpg city/highway.",
+        "engine":"The 458 is powered by a 4,497 cc (4.5 L; 274.4 cu in) engine of the Ferrari/Maserati F136 V8 family, generating a power output of 570 PS (419 kW; 562 hp) at 9,000 rpm (redline) and 540 N⋅m (398 lb⋅ft) of torque at 6,000 rpm with 80% torque available at 3,250 rpm.",
+        "transmission":"7-speed dual-clutch automatic",
+        "performance":"The 458 is a work of art and aerodynamic efficiency, featuring a 4.5L naturally aspirated V8 engine that produces a stunning 562 hp at 9,000 RPM. The engine outputs 125 hp per liter, which is a record for the highest amount of power per naturally aspirated piston",
+        "stock":10,
+        "seller":"Asif Iqbal"
+    },
+    {
+        "name":"Lamborghini Huraca",
+        "img":"https://i.ibb.co/0MLTMGG/Lamborghini-Huraca-n-black.jpg",
+        "price":215104,
+        "description": "Lamborghini claims the car will accelerate from 0–100 km/h (0–62 mph) in 3.4 seconds and 0–200 km/h (0–124 mph) in 10.1 seconds. The top speed is claimed to be as high as 320 km/h (199 mph)",
+        "engine":"The Petrol engine is 5204 cc . It is available with Automatic transmission. Depending upon the variant and fuel type the Huracan has a mileage of 10.6 to 11.24 kmpl & Ground clearance of Huracan is 125mm.",
+        "transmission":"This 7-speed transmission",
+        "performance":"Lamborghini claims the car will accelerate from 0–100 km/h (0–62 mph) in 3.4 seconds and 0–200 km/h (0–124 mph) in 10.1 seconds. The top speed is claimed to be as high as 320 km/h (199 mph)",
+        "stock":20,
+        "seller":"Rifat Hasan"
+    },
+    {
+        "name":"Mercedes Vision Avtr",
+        "img":"https://i.ibb.co/djWdXsJ/Mercedes-VISION-AVTR.jpg",
+        "price":525200,
+        "description": "It analyses the measured brain waves and recognizes on which light points the user directs his focus and full attention (attention-sensing interface). The stronger the focus, the higher the neuronal activity. The device then triggers the targeted function in the vehicle. Vision AVTR",
+        "engine":"Mercedes' Vision ATR sports a 110-kilowatt-hour electric motor. It can produce more than 469 horsepower and an electric range of more than 435 miles. The vehicle's appearance—both exterior and interior—is just as, if not more, futuristic.",
+        "transmission":"Brain Computer Interface (BCI)",
+        "performance":"Vision AVTR produces 470 horsepower (350 kilowatts) and offers an estimated driving range of up to 435 miles (700 kilometers). It also offers sideways up to 30 degrees in a so-called crab movement for maximum mobility",
+        "stock":5,
+        "seller":"Rahanur Rahman"
+    },
+    
+    {
+        "name":"Lexus LFA",
+        "img":"https://i.ibb.co/SvGYN9v/Lexus-LFA.jpg",
+        "price":375000,
+        "description": "The Lexus LFA (Japanese: レクサス・LFA, Rekusasu LFA) is a two-seat sports car manufactured by Lexus, the luxury car division of Toyota.",
+        "engine":"The Lexus LFA features a 4.8-liter V10 that's derived from a race engine used in Formula 1 cars. The track-bred motor generates 552 horsepower at 8,700 rpm and 354 pound-feet of torque at 6,800 rpm",
+        "transmission":"6-speed Aisin SA6 automated manual",
+        "performance":"Lexus reports that the LFA has a top speed of 202 mph and that it will sprint from zero to 60 mph in 3.6 seconds.",
+        "stock":8,
+        "seller":"Mohammad Tushar"
+    },
+    
+    
+    {
+        "name":"Audi RS5",
+        "img":"https://images.pexels.com/photos/7559057/pexels-photo-7559057.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price":275000,
+        "description": "Engine, Transmission, and Performance Under the RS5's sinewy clamshell hood sits a twin-turbo 2.9-liter V-6 that pumps out 444 horsepower and 443 pound-feet of torque.",
+        "engine":"Image result for audi rs5 engine 2.9-liter V-6 Engine, Transmission, and Performance Under the RS5's sinewy clamshell hood sits a twin-turbo 2.9-liter V-6 that pumps out 444 horsepower and 443 pound-feet of torque",
+        "transmission":"dual-clutch automated-manual transmission",
+        "performance":"Image result for audi rs5 performance The new RS5 is such a car. Hitting 62mph in just 3.9 seconds, it's properly, properly quick. Quicker, in fact, than supercar legends and even some current driver-focused sports cars.",
+        "stock":8,
+        "seller":"Mohammad Asif"
+    },
+    {
+        "name":"BMW 228i",
+        "img":"https://images.unsplash.com/photo-1600268330186-76564be81357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+        "price":225000,
+        "description": "The BMW 228i stands for powerful, compact vehicles – the best in their class. Naturally, this also applies to the BMW 2 Series Active Tourer and BMW 2 Series Gran Tourer,",
+        "engine":"The  BMW 228i has a turbocharged 2.0-liter four-cylinder engine that produces 240 horsepower. The M235i comes with a 320-horsepower, turbocharged 3.0-liter six-cylinder engine. ",
+        "transmission":"2022 BMW M3 and M4",
+        "performance":"BMW expects around two thirds of 2 Series Coupé buyers to go for the entry-level 220i, which has a 181bhp 2.0-litre petrol engine under the bonnet. Acceleration is strong enough (0-62mph takes 7.5 seconds)",
+        "stock":10,
+        "seller":"Toretto"
     }
+    ,
+    {
+        "name":"Mercedes Benz AMG GT R",
+        "img":"https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "price":335000,
+        "description": "The GT is a roadster, while the GT R is a coupe. The GT is also available in two model options--either the AMG® GT Roadster or the AMG® GT C Roadster. The GT R, on the other hand, is only offered in one model which is the AMG® GT R Coupe.",
+        "engine":"The M178 engine in this variant is tuned to an output of 430 kW (585 PS; 577 hp) at 6,250 rpm and 700 N⋅m (516 lb⋅ft) of torque at 5,500 rpm. The GT R accelerates from 0 to 100 km/h (62 mph) in 3.6 seconds and has a claimed top speed of 319 km/h (198 mph)",
+        "transmission":"523-hp dry-sump biturbo V8",
+        "performance":"The M178 engine in this variant is tuned to an output of 430 kW (585 PS; 577 hp) at 6,250 rpm and 700 N⋅m (516 lb⋅ft) of torque at 5,500 rpm. The GT R accelerates from 0 to 100 km/h (62 mph) in 3.6 seconds and has a claimed top speed of 319 km/h (198 mph).",
+        "stock":10,
+        "seller":"Asif Iqbal"
+    }
+    
 ]
