@@ -5,7 +5,7 @@
 }
 .banner-img img{
     width: 100%;
-    height: auto;
+    
 }
 .banner-text{
     
@@ -35,4 +35,28 @@
 .btn-type:hover{
     background-color: rgb(255, 187, 0);
     color: white;
+}
+
+@media only screen and (max-width:576px) {
+    .banner-img img{
+        width: 100%;
+        
+    }
+
+    .banner-text h1{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .banner-text h4{
+        color: rgb(255, 153, 0);
+        font-size: 15px;
+    }
+    .banner-text h6{
+        font-size: 10px;
+    }
+    .btn-type{
+        color: black;
+        background-color: rgb(255, 255, 255);
+        font-size: 8px;
+    }
 }

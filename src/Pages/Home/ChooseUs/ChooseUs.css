@@ -2,6 +2,7 @@
 .main-div{
 margin: 2%;
 align-items: center;
+display: flex;
 }
 .child-div{
     margin: 3%;
@@ -12,4 +13,21 @@ align-items: center;
 }
 h1{
     margin-top: 6%;
+}
+@media only screen and (max-width:576px) {
+    .main-div{
+        margin: 2%;
+        align-items: center;
+        display: block;
+        }
+        .child-div{
+            margin: 3%;
+        }
+        .choose-text{
+            text-align: start;
+            margin-left: 4%;
+        }
+        h1{
+            margin-top: 6%;
+        }
 }

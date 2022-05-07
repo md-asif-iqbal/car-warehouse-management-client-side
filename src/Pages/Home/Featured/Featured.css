@@ -2,5 +2,13 @@
 .product-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2%;
+    gap: 20px;
+}
+
+@media only screen and (max-width:576px) {
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
 }

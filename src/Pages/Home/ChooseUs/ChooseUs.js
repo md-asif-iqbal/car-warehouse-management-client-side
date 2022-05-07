@@ -8,7 +8,7 @@ const ChooseUs = () => {
     return (
         <div className=''>
             <h1 className=''>Why Choose Us?</h1>
-            <div className='main-div d-flex mt-3 mb-4'>
+            <div className='main-div  mt-3 mb-4'>
                 <div className='child-div d-flex'>
                     <div>
                         <img src={img1} alt=""/>

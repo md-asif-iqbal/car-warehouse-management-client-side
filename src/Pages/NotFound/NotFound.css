@@ -1,7 +1,6 @@
 
 .error{
-    position: relative;
-    overflow: hidden;
+    
     margin-bottom: 5%;
 }
 .error h1{
@@ -9,10 +8,7 @@
     font-size: 70px;
     margin-top: 0px;
     margin-bottom: 0px;
-    position: absolute;
-    top: 0;
-    margin-left: 45%;
-    margin-top: 20%;
+
 }
 .error h5{
     color: rgb(209, 209, 209);

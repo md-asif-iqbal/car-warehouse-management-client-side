@@ -41,6 +41,30 @@
     border-radius: 50%;
     border: 0px;
 }
-.delete-container{
+
+
+/* mobile devices */
+@media only screen and (max-width:576px) {
     
+    .delete-item{
+        margin-left: 0%;
+        border: 1px solid #95A0A7;
+        border-radius: 8px;
+        padding: 8px;
+        margin-top: 2%;
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    /* car img */
+    .delete-items img{
+        object-fit: center ; 
+        object-position: center; 
+        height: 10vh;
+        width: 50%;
+        border-radius: 50%;
+    }
+    .delete-button img{
+        width: 70%;
+    }
 }

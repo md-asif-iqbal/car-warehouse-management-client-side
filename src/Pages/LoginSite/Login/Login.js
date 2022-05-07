@@ -114,7 +114,7 @@ const Login = () => {
             <Form onSubmit={handleLogin}>
                 <Form.Group className="mb-2" controlId="formGroupEmail">
                     <Form.Label>Email address</Form.Label>
-                    <FaUser/>
+                    
                     <Form.Control  className='type' type="email" ref={emailRef} placeholder="Enter email" required />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupPassword">
