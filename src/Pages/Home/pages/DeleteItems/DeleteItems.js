@@ -7,7 +7,7 @@ const DeleteItems = () => {
     
     return (
         <div>
-            <h2>This is Delete Inventory</h2>
+            <h2 className='mb-4 mt-5'>Do you want Delete this Inventory</h2>
             {
                 product.map(products => <DeleteItemsDetails
                 products={products}

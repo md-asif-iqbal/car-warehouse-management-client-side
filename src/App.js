@@ -14,6 +14,7 @@ import MyItems from './Pages/Home/pages/MyItems/MyItems';
 import Login from './Pages/LoginSite/Login/Login';
 import SignUp from './Pages/LoginSite/SignUp/SignUp';
 import RequireAuth from './Pages/LoginSite/RequireAuth/RequireAuth'
+import NotFound from './Pages/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
@@ -41,6 +42,8 @@ function App() {
             <Route path='/myItems' element={<RequireAuth>
               <MyItems></MyItems>
             </RequireAuth>}></Route>
+            <Route path='*' element={<NotFound></NotFound> }></Route>
+
             {/* <Route path='/myItems' element={}></Route> */}
 
             {/* <Route path='/load' element={<Loading></Loading>}>loading</Route> */}

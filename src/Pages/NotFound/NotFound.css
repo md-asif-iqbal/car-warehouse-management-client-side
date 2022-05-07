@@ -1,0 +1,33 @@
+
+.error{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.error h1{
+    color: rgba(110, 110, 109, 0.603);
+    font-size: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: absolute;
+    top: 0;
+    margin-left: 45%;
+    margin-top: 20%;
+}
+.error h5{
+    color: rgb(209, 209, 209);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.error p{
+    margin-top: 5px;
+    color: rgb(161, 154, 154);
+    margin-bottom: 0px;
+}
+
+.icon{
+    margin-top: 2%;
+    font-size: 300px;
+    color: rgba(190, 184, 179, 0.479);
+}

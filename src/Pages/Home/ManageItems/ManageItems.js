@@ -2,6 +2,7 @@ import { Button } from 'bootstrap';
 import React from 'react';
 import { Col, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import useProductId from '../../../hooks/useProductId';
 import'./ManageItems.css'
 const ManageItems = () => {
@@ -26,7 +27,9 @@ const ManageItems = () => {
             body: JSON.stringify({newStock}),
         })
         .then(res=> res.json())
-        .then(result =>{console.log(result);
+        .then(result =>{
+            toast('This Item add new stock')
+            console.log(result);
         }) 
 
      
@@ -49,7 +52,9 @@ const ManageItems = () => {
             body: JSON.stringify({newStock}),
         })
         .then(res=> res.json())
-        .then(result =>{console.log(result);
+        .then(result =>{
+            toast('Update Stock successfully')
+            console.log(result);
         }) 
             
     }
@@ -102,6 +107,7 @@ const ManageItems = () => {
                 </div>
             </div>
             </div>
+            <ToastContainer/>
         </div>
     );
 };

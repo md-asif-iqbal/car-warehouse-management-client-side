@@ -1,8 +1,9 @@
 
 import React from 'react';
 import'./DeleteItemsDetails.css'
-import bin from '../../../../Images/garbage.png'
+import bin from '../../../../Images/dustbin.png'
 import useProductDetails from '../../../../hooks/useProductDetails';
+import { toast, ToastContainer } from 'react-toastify';
 
 const DeleteItemsDetails = ({products}) => {
     const {_id , img , name,stock , price} = products;
@@ -18,19 +19,20 @@ const DeleteItemsDetails = ({products}) => {
             .then(data => {
                 const remainingProduct = product.filter(products => products._id !== id);
                 setProduct(remainingProduct);
+                toast('Delete This Item please reload ')
             })
         }
 
     }
     return (
-        <div className='delete-item mb-5'>
+        <div className='delete-item '>
         <div className='delete-items'>
             <img src={img} alt="" />
         </div>
         <div className="delete-item-container">
             <div className="delete-item-details">
                 <p className="product-name">
-                    {name.length> 10 ? name.slice(0, 10) + '...': name }
+                    {name.length> 20 ? name.slice(0, 20) + '...': name }
                 </p>
                 <p>Price: <span className=''>${price}</span></p>
                 
@@ -42,6 +44,7 @@ const DeleteItemsDetails = ({products}) => {
                 </button>
             </div>
         </div>
+        <ToastContainer/>
     </div>
     );
 };

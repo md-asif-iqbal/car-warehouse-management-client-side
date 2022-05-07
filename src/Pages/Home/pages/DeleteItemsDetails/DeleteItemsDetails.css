@@ -4,7 +4,7 @@
     border: 1px solid #95A0A7;
     border-radius: 8px;
     padding: 8px;
-    margin-top: 21px;
+    margin-top: 2%;
     width: 50%;
     display:grid;
     grid-template-columns: 1fr 2fr;
@@ -22,18 +22,25 @@
 }
 
 .delete-item-container{
+    
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.delete-item-details{
+    text-align: start;
 }
 
 .delete-item .delete-container{
     display: flex;
     align-items: center;
+    
 }
 
 .delete-button {
     border-radius: 50%;
     border: 0px;
 }
-
+.delete-container{
+    
+}
