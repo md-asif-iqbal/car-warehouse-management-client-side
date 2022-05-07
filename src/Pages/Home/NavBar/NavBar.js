@@ -15,17 +15,15 @@ const NavBar = () => {
             <Nav className="">
             <Nav.Link as={CustomLink} to='/home'>Home</Nav.Link>
             <Nav.Link as={CustomLink} to='/pricing'>Features</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link as={CustomLink} to='/inventory'>Inventory</Nav.Link>
+            <Nav.Link as={CustomLink} to='/blogs'>Blogs</Nav.Link>
+            
             </Nav>
             <Nav className=''>
-            <Nav.Link href="#deets">More</Nav.Link>
-            <Nav.Link eventKey={2}as={CustomLink} to='/login'>
+            <Nav.Link as={CustomLink} to='/deleteItems'>Manage Items</Nav.Link>
+            <Nav.Link as={CustomLink} to='/addItems'>Add Items</Nav.Link>
+            <Nav.Link as={CustomLink} to='/myItems'>My Items</Nav.Link>
+            <Nav.Link as={CustomLink} to='/login'>
                 Login
             </Nav.Link>
             </Nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import useProductId from '../../../hooks/useProductId';
-
+import'./ManageItems.css'
 const ManageItems = () => {
     const {productId} = useParams();
     const [products] = useProductId(productId);
@@ -10,18 +10,20 @@ const ManageItems = () => {
     return (
         <div>
             <h2>This is manage Items {products.name}</h2>
-            <div>
+            <div className='main'>
+            <div className='product-imgs'>
             <img src={products.img} alt=""/>
             </div>
-            <div>
-                <h2>{products.name}</h2>
-                <h5>{products.price}</h5>
-                <h5>{products.performance}</h5>
-                <h5>{products.engine}</h5>
-                <h5>{products.transmission}</h5>
-                <h5>{products.description}</h5>
-                <h5>{products.stock}</h5>
-                <h5>{products.seller}</h5>
+            <div className='info'>
+                <h2>Model: {products.name}</h2>
+                <h5>Price: ${products.price}</h5>
+                <h5>Performance: {products.performance}</h5>
+                <h5>Engine: {products.engine}</h5>
+                <h5>Transmission: {products.transmission}</h5>
+                <h5>Description:{products.description}</h5>
+                <h5>Stock: {products.stock}</h5>
+                <h5>Seller: {products.seller}</h5>
+            </div>
             </div>
         </div>
     );

@@ -1,0 +1,39 @@
+
+.delete-item{
+    margin-left: 25%;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 21px;
+    width: 50%;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.delete-items img{
+    object-fit: center ; 
+    object-position: center; 
+    height: 10vh;
+    width: 30%;
+    border-radius: 50%;
+}
+
+.delete-item-details p{
+    margin: 0;
+}
+
+.delete-item-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-item .delete-container{
+    display: flex;
+    align-items: center;
+}
+
+.delete-button {
+    border-radius: 50%;
+    border: 0px;
+}
+

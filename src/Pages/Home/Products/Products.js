@@ -1,6 +1,6 @@
 import React from 'react';
 import'./Products.css'
-import imgs from '../../Images/road (1).png'
+import imgs from '../../../Images/road (1).png'
 import { FaRoad } from 'react-icons/fa';
 import {useNavigate } from 'react-router-dom';
 const Products = ({products}) => {

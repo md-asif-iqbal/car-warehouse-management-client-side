@@ -13,7 +13,7 @@ const useProductDetails =()  =>{
 
     }, []);
 
-    return [product]
+    return [product , setProduct]
 }
 
 export default useProductDetails;

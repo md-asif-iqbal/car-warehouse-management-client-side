@@ -1,6 +1,6 @@
 import React from 'react';
 import useProductDetails from '../../../hooks/useProductDetails';
-import Products from '../../Products/Products';
+import Products from '../Products/Products';
 import'./Featured.css'
 
 const Featured = () => {
