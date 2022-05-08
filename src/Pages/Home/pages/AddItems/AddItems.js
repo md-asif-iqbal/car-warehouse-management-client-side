@@ -26,6 +26,7 @@ const AddItems = () => {
             event.target.reset();
             
         })
+        
     };
     return (
         <div className='w-100 add-items'>

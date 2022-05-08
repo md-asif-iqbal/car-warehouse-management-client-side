@@ -11,6 +11,7 @@ const MyItems = () => {
     const [user] = useAuthState(auth);
     const [items, setItems] = useState([]);
     const navigate = useNavigate();
+    
     useEffect( () => {
         
         const getItems = async() =>{

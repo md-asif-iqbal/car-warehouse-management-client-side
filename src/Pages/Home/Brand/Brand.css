@@ -25,8 +25,12 @@
         grid-template-columns: 1fr 1fr;
         gap: 15px;
         margin: 5%;
+        
         /* box-shadow: 5px 10px 10px 5px; */
         
+    }
+    .brand-cards{
+        height: 120px;
     }
     .brand img{
         object-fit: cover ; /* Do not scale the image */

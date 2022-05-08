@@ -1,10 +1,21 @@
 import React from 'react';
 import useProductDetails from '../../../hooks/useProductDetails';
 import InventoryDetails from '../InventoryDetails/InventoryDetails';
+import Loading from '../Loading/Loading';
 
 import'./Inventory.css'
 const Inventory = () => {
     const [product] = useProductDetails();
+
+    // console.log(product);
+
+    if (product.length===0) {
+        return (
+            <div className='mt-5'>
+                <Loading></Loading>
+            </div>
+        )
+    }
     return (
         <div>
             

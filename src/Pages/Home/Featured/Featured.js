@@ -4,10 +4,15 @@ import Products from '../Products/Products';
 import'./Featured.css'
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 
 const Featured = () => {
     const [product] = useProductDetails();
     // console.log(product);
+
+    if (product.length===0) {
+        return <Loading></Loading>
+    }
 
     return (
         <div className='container'>

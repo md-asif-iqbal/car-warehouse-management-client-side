@@ -44,7 +44,7 @@ const Login = () => {
     }
     // handling Error
 
-    if(token){
+    if(error){
         errorElements=
             <div>
               <p className='text-danger'>{error?.message}</p>

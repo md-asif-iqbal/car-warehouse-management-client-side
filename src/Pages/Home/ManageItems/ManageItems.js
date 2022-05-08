@@ -28,8 +28,9 @@ const ManageItems = () => {
         })
         .then(res=> res.json())
         .then(result =>{
-            toast('This Item add new stock')
+            toast('This Item add new stock please reload!!!')
             console.log(result);
+            event.target.reset();
         }) 
 
      
@@ -53,7 +54,7 @@ const ManageItems = () => {
         })
         .then(res=> res.json())
         .then(result =>{
-            toast('Update Stock successfully')
+            toast('Update Stock successfully please reload!!!')
             console.log(result);
         }) 
             
@@ -62,8 +63,8 @@ const ManageItems = () => {
 
     return (
         <div>
-            <h2>This is manage Items {products.name}</h2>
-            <div className='main'>
+            <h2 className='mt-5 mb-4'>This is Items {products.name}</h2>
+            <div className='main mb-5'>
             <div className='product-imgs'>
             <img src={products.img} alt=""/>
             </div>
@@ -78,7 +79,7 @@ const ManageItems = () => {
                 <h5>Seller: {products.seller}</h5>
                 <div className='d-flex'>
                     <div >
-                    <Form onSubmit={handleAddStock}>
+                    <Form onSubmit={handleAddStock} >
                         <Row className="align-items-center">
                             <Col xs="auto">
                             <Form.Label htmlFor="inlineFormInput" visuallyHidden>
@@ -100,7 +101,7 @@ const ManageItems = () => {
                     </Form>
                     </div>
                     <div>
-                    <button className='btn btn-primary ms-5' type="submit" onClick={handleDeliveredStock}>
+                    <button className='btn btn-primary ms-5 ' type="submit" onClick={handleDeliveredStock}>
                             Delivered
                         </button>
                     </div>
