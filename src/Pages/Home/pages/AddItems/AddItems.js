@@ -11,7 +11,7 @@ const AddItems = () => {
     const onSubmitForm = (data , event) =>{
         
         console.log(data);
-        const url =`http://localhost:8000/products`;
+        const url =`https://still-ocean-23705.herokuapp.com/products`;
         fetch(url,{
             method: 'POST',
             headers:{

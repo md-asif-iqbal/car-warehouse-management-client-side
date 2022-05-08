@@ -17,8 +17,9 @@ const Home = () => {
             
             <Banner></Banner>
             <Brand></Brand>
-            <Featured></Featured>
             <ChooseUs></ChooseUs>
+            <Featured></Featured>
+            
         </div>
     );
 };

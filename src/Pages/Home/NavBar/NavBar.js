@@ -16,7 +16,7 @@ const NavBar = () => {
        
             <Navbar collapseOnSelect className='navBar' sticky='top' expand="lg" bg="dark" variant="dark">
         <Container >
-        <Navbar.Brand href="#home">TORETTO'S Car Collections</Navbar.Brand>
+        <Navbar.Brand as={Link} to='/home'>TORETTO'S Collections</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='child-header'>
             <Nav className="">

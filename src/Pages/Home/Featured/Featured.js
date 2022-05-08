@@ -19,7 +19,7 @@ const Featured = () => {
                 key={products._id} products = {products}></Products>)
             }
             </div>
-                <div className='show-all mt-2'>
+                <div className='show-all mt-2 mb-5'>
                 <Link className='btn' to='/inventory'>Show All <span><AiOutlinePlusCircle/></span></Link>
                 </div>
             </div>

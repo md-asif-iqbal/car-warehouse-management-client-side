@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import axiosPrivate from '../../../../api/axiosPrivate';
 import auth from '../../../../firebase.init';
 import MyItemsDetails from '../MyItemsDetails/MyItemsDetails';
+import'./MyItems.css'
 const MyItems = () => {
     const [user] = useAuthState(auth);
     const [items, setItems] = useState([]);
@@ -14,7 +15,7 @@ const MyItems = () => {
         
         const getItems = async() =>{
             const email = user?.email;
-            const url = `http://localhost:8000/items?email=${email}`;
+            const url = `https://still-ocean-23705.herokuapp.com/items?email=${email}`;
             
             try{
                 const {data} = await axios.get(url)
@@ -37,7 +38,7 @@ const MyItems = () => {
         <div>
             
             <h2>This is your Items: {items.length}</h2>
-            <div className='child-cont'>
+            <div className='myItems'>
             {
                 items.map(item => <MyItemsDetails key={item._id}
                 item = {item}>

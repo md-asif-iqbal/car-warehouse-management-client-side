@@ -17,7 +17,7 @@ const ManageItems = () => {
         const stock = parseInt(event.target.number.value);
         const newStock = parseInt(oldStock+stock)
         // console.log(newStock);
-        const url = `http://localhost:8000/products/${id}`
+        const url = `https://still-ocean-23705.herokuapp.com/products/${id}`
         console.log(url);
         fetch(url , {
             method: 'PUT',
@@ -42,7 +42,7 @@ const ManageItems = () => {
         
         const newStock = parseInt(oldStock-1)
          console.log(newStock);
-        const url = `http://localhost:8000/products/${id}`
+        const url = `https://still-ocean-23705.herokuapp.com/products/${id}`
         console.log(url);
         fetch(url , {
             method: 'PUT',

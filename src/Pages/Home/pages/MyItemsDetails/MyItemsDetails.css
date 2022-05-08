@@ -33,6 +33,7 @@
 }
 
 @media only screen and (max-width:576px) {
+
     .item-main{
         padding: 2%;
         border-radius: 10px;
