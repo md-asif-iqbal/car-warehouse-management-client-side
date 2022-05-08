@@ -4,6 +4,13 @@
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
+.show-all span{
+    font-size: 25px;
+}
+.show-all :hover{
+    color: rgb(255, 174, 0);
+    
+}
 
 @media only screen and (max-width:576px) {
     .product-container{

@@ -1,22 +1,34 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import'./SignUp.css'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from'../../../Images/login-img/thumb-1.jpg'
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loading from '../../Home/Loading/Loading';
+import useToken from '../../../hooks/useToken';
 const SignUp = () => {
-
+    const navigate = useNavigate();
+  
     const [
         createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] =  useCreateUserWithEmailAndPassword(auth);
-      const [sendEmailVerification] = useSendEmailVerification(
-        auth
-      );
+      ] =  useCreateUserWithEmailAndPassword(auth,{sendEmailVerification: true});
+      const [token] = useToken(user);
+      const navigateLogin = () => {
+        navigate('/login');
+    }
+    
+    if(token){
+        navigate('/home')
+    }
+    
+    if(loading){
+        return <Loading></Loading>
+    }
 
 const HandleSignUp = async (event) =>{
     event.preventDefault();
@@ -24,8 +36,7 @@ const HandleSignUp = async (event) =>{
     const email = event.target.email.value;
     const number = event.target.number.value;
     const password = event.target.password.value;
-    await createUserWithEmailAndPassword(email , password);
-    await sendEmailVerification();
+    await createUserWithEmailAndPassword(email, password);
     console.log(name,email,number,password);
     
 }
@@ -58,7 +69,7 @@ const HandleSignUp = async (event) =>{
                 </Form.Group>
                 
                 <button className='btn btn-submit mb-4 mt-2' type="btn" value="SignUp">Sign up</button>
-                <p>Do You have an account?<Link to="/login" className="text-decoration-none text-primary" > Please Log in</Link> </p>
+                <p>Do You have an account?<Link to="/login" onClick={navigateLogin} className="text-decoration-none text-primary" > Please Log in</Link> </p>
             </Form>
             </div>
             

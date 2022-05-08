@@ -16,12 +16,11 @@ const NavBar = () => {
        
             <Navbar collapseOnSelect className='navBar' sticky='top' expand="lg" bg="dark" variant="dark">
         <Container >
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">TORETTO'S Car Collections</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className='child-header'>
             <Nav className="">
             <Nav.Link as={CustomLink} to='/home'>Home</Nav.Link>
-            <Nav.Link as={CustomLink} to='/pricing'>Features</Nav.Link>
             <Nav.Link as={CustomLink} to='/inventory'>Inventory</Nav.Link>
             <Nav.Link as={CustomLink} to='/blogs'>Blogs</Nav.Link>
             

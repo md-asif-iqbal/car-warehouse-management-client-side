@@ -12,6 +12,7 @@ import { async } from '@firebase/util';
 import Loading from '../../Home/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../../../hooks/useToken';
 const Login = () => {
     const navigate = useNavigate();
     let location = useLocation();
@@ -26,24 +27,24 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
-      const [sendPasswordResetEmail ,sending] = useSendPasswordResetEmail(
-        auth
-      );
+    const [sendPasswordResetEmail ,sending] = useSendPasswordResetEmail(auth);
+    const [token] = useToken(user);
 
     const handleLogin = async (event)=>{
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        await signInWithEmailAndPassword();
+        await signInWithEmailAndPassword(email , password);
         // console.log('found');
-
+        // const {data}  = await axios.post('http://localhost:8000/login' ,{email})
+        // localStorage.setItem('token' , data.token);
     }
-    if(user){
+    if(token){
         navigate(from,{replace: true});
     }
     // handling Error
 
-    if(error){
+    if(token){
         errorElements=
             <div>
               <p className='text-danger'>{error?.message}</p>

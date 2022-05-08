@@ -2,10 +2,12 @@ import React from 'react';
 import useProductDetails from '../../../hooks/useProductDetails';
 import Products from '../Products/Products';
 import'./Featured.css'
+import { AiOutlinePlusCircle } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Featured = () => {
     const [product] = useProductDetails();
-    console.log(product);
+    // console.log(product);
 
     return (
         <div className='container'>
@@ -17,6 +19,9 @@ const Featured = () => {
                 key={products._id} products = {products}></Products>)
             }
             </div>
+                <div className='show-all mt-2'>
+                <Link className='btn' to='/inventory'>Show All <span><AiOutlinePlusCircle/></span></Link>
+                </div>
             </div>
             
         </div>

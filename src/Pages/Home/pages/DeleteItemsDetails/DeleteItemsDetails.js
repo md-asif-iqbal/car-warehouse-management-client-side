@@ -3,27 +3,12 @@ import React from 'react';
 import'./DeleteItemsDetails.css'
 import bin from '../../../../Images/dustbin.png'
 import useProductDetails from '../../../../hooks/useProductDetails';
-import { toast, ToastContainer } from 'react-toastify';
 
-const DeleteItemsDetails = ({products}) => {
+
+const DeleteItemsDetails = ({products ,handleRemoveProduct}) => {
     const {_id , img , name,stock , price} = products;
-    const [product, setProduct] = useProductDetails();
-    const handleRemoveProduct = id =>{
-        const proceed = window.confirm('Are you sure Delete this Items?');
-        if(proceed){
-            const url =`http://localhost:8000/products/${id}`;
-            fetch(url, {
-                method: 'DELETE'
-            })
-            .then(res => res.json())
-            .then(data => {
-                const remainingProduct = product.filter(products => products._id !== id);
-                setProduct(remainingProduct);
-                toast('Delete This Item please reload ')
-            })
-        }
-
-    }
+    
+    
     return (
         <div className='delete-item '>
         <div className='delete-items'>
@@ -44,7 +29,7 @@ const DeleteItemsDetails = ({products}) => {
                 </button>
             </div>
         </div>
-        <ToastContainer/>
+        
     </div>
     );
 };

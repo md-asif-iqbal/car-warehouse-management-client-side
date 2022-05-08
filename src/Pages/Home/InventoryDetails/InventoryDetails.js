@@ -4,7 +4,7 @@ import'./InventoryDetails.css'
 const InventoryDetails = ({products}) => {
     const {_id , img , name,stock , seller , price , description } = products;
     const navigate = useNavigate();
-    console.log(_id);
+    // console.log(products);
     const navigateToProductDetails = id => {
         navigate(`/manageItems/${id}`);
     }
@@ -24,7 +24,7 @@ const InventoryDetails = ({products}) => {
                     <p> seller: <span>{seller}</span>  </p>
                     <p style={{height: '1px'}} className='erow w-100'></p>  
                 </div>
-                <div className=''>
+                <div className='text-cont'>
                     
                     <button className=' btn btn-primary' onClick={() => navigateToProductDetails(_id)} > Manage</button>
                     
